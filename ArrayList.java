@@ -34,6 +34,13 @@ class  ArrayListClass
 		for(int i=0;i<=indexes;i++)
 			System.out.print(a[i]+ " ");
 	}
+	public int get(int n)
+	{
+		if(indexes>n)
+		return a[n];
+		else
+		return -1;
+	}
 }
 public class ArrayList {
 
@@ -43,5 +50,7 @@ public class ArrayList {
         	 l1.add(i*10);
          l1.add(100);
          l1.traverse();
+		 int n=3;
+		 System.out.println(l1.get(3));
 	}
 }
